@@ -6,10 +6,10 @@ const existbtn=document.getElementById("existing");
 
 btn.addEventListener('click',(e)=>{
 	e.preventDefault();
-	alert(`Logged in as ${name}`)
-	if(check){
-		localStorage.setItem("name",JSON.stringify(name));
-		localStorage.setItem("password",JSON.stringify(password));
+	alert(`Logged in as ${name.value}`)
+	if(check.checked){
+		localStorage.setItem("name",name.value);
+		localStorage.setItem("password",password.value);
 	}else{
 		localStorage.removeItem("name");
 		localStorage.removeItem("password");
