@@ -17,5 +17,6 @@ btn.addEventListener('click',(e)=>{
 });
 existbtn.addEventListener('click',(e)=>{
 	e.preventDefault();
-	alert(`Logged in as ${localStorage.getItem("name")`);
+	costr stordata=localStorage.getItem("name")
+	alert(`Logged in as ${`stordata`});
 })
