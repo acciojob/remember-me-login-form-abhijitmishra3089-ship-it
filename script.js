@@ -8,15 +8,15 @@ btn.addEventListener('click',(e)=>{
 	e.preventDefault();
 	alert(`Logged in as ${name.value}`)
 	if(check.checked){
-		localStorage.setItem("name",name.value);
+		localStorage.setItem("username",name.value);
 		localStorage.setItem("password",password.value);
 	}else{
-		localStorage.removeItem("name");
+		localStorage.removeItem("username");
 		localStorage.removeItem("password");
 	}
 });
 existbtn.addEventListener('click',(e)=>{
 	e.preventDefault();
-	costr stordata=localStorage.getItem("name")
-	alert(`Logged in as ${stordata});
+	costr storeddata=localStorage.getItem("username")
+	alert(`Logged in as ${storeddata});
 })
