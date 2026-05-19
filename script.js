@@ -17,7 +17,7 @@ btn.addEventListener('click',(e)=>{
 	if(check.checked){
 		localStorage.setItem("username",name.value);
 		localStorage.setItem("password",password.value);
-		 existingBtn.style.display = "block";
+		 existingBtn.style.display = "inline-block";
 	}else{
 		localStorage.removeItem("username");
 		localStorage.removeItem("password");
