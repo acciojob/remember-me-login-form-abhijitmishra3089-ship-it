@@ -7,9 +7,9 @@ const existbtn=document.getElementById("existing");
 const savedUsername = localStorage.getItem("username");
 const savedPassword = localStorage.getItem("password");
 
-        // if (savedUsername && savedPassword) {
-        //     existbtn.style.display = "inline-block";
-        // }
+        if (savedUsername===null && savedPassword===null) {
+            existbtn.style.display = "inline-block";
+        }
 
 btn.addEventListener('click',(e)=>{
 	e.preventDefault();
