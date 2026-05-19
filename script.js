@@ -8,7 +8,7 @@ const savedUsername = localStorage.getItem("username");
 const savedPassword = localStorage.getItem("password");
 
         if (savedUsername && savedPassword) {
-            existingBtn.style.display = "inline-block";
+            existbtn.style.display = "inline-block";
         }
 
 btn.addEventListener('click',(e)=>{
@@ -17,18 +17,18 @@ btn.addEventListener('click',(e)=>{
 	if(check.checked){
 		localStorage.setItem("username",name.value);
 		localStorage.setItem("password",password.value);
-		 existingBtn.style.display = "inline-block";
+		 existbtn.style.display = "inline-block";
 	}else{
 		localStorage.removeItem("username");
 		localStorage.removeItem("password");
-		 existingBtn.style.display = "none";
+		 existbtn.style.display = "none";
 	}
 });
-// existbtn.addEventListener('click',(e)=>{
-// 	e.preventDefault();
-// 	costr storeddata=localStorage.getItem("username")
-// 	alert(`Logged in as ${storeddata});
-// });
+existbtn.addEventListener('click',(e)=>{
+	e.preventDefault();
+	const storeddata=localStorage.getItem("username")
+	alert(`Logged in as ${storeddata}`);
+});
 // const username = document.getElementById("username");
 // const password = document.getElementById("password");
 // const submitBtn = document.getElementById("submit");
