@@ -26,6 +26,6 @@ btn.addEventListener('click',(e)=>{
 });
 existbtn.addEventListener('click',(e)=>{
 	e.preventDefault();
-	const storeddata=localStorage.getItem("username")
+	const storeddata=localStorage.getItem("username");
 	alert(`Logged in as ${storeddata}`);
 });
